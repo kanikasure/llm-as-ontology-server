@@ -1,6 +1,6 @@
 # Manual verification: Selectron therapy
 
-We manually checked the **parent**, **grandparent**, **cousin**, and **sibling** relationships for this concept.
+We manually checked the **parent**, **grandparent**, **children**, and **sibling** relationships for this concept.
 
 ## Parents
 
@@ -10,11 +10,15 @@ We manually checked the **parent**, **grandparent**, **cousin**, and **sibling**
 
 ![Grandparents](grandparents.png)
 
-## Cousins
+## Children
 
-The following code was used to compute the intersection of two sibling sets (cousins). The result is illustrated in the image below.
+Selectron therapy is a **leaf node** in the hierarchy; it has no children.
 
-![Cousins](cousins.png)
+## Siblings
+
+The following code was used to compute the sibling set. The result is illustrated in the image below.
+
+![Siblings](siblings.png)
 
 ```python
 # -----------------------------
@@ -93,14 +97,6 @@ set2 = {
     "Strontium 90 brachytherapy",
     "Radiation plaque therapy",
     "Iridium wire therapy"
-}
-
-# -----------------------------
-# Remove unwanted concepts from Set 1
-# -----------------------------
-to_remove = {
-    "Radiotherapy: seeds into hypophysis",
-    "Selectron therapy"
 }
 
 set1 = set1 - to_remove
