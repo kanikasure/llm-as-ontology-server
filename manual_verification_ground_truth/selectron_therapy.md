@@ -16,7 +16,7 @@ Selectron therapy is a **leaf node** in the hierarchy; it has no children.
 
 ## Siblings
 
-The following code was used to compute the sibling set. The result is illustrated in the image below.
+We copied the BioPortal siblings from the file structure into a set and verified its intersection with the API result to see if there are any concepts being retrieved that should not be there, or any missing from the API call. The code below computes that intersection; the result is illustrated in the image below.
 
 ![Siblings](siblings.png)
 
